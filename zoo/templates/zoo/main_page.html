@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual_Z00</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<style>
+    #btn:hover{
+        background-color: blue;
+        color: white;
+        text-align: end;
+    }
+    table{
+    font-size:20px;
+    border-spacing: 20px;
+    color: white;
+}
+a{ color:white;    }
+a:hover{
+    background-color: blue;
+        color: white;
+        text-align: end;
+        top:50%;
+}
+input{ font-size: 20px; }
+#na{
+ font-size:80px;   
+ color:white;
+ font-style: italic;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.overlay-text {
+   /* background-image: url('https://media.istockphoto.com/id/1254530990/photo/cheetah-acinonyx-jubatus-adult-running-through-savannah.webp?b=1&s=612x612&w=0&k=20&c=HLjAhsjtbgpBGWPCSGf54N04SpdxikemmCJU2QPDeSE=');
+    */position: absolute;
+    top: 40%;
+    right: 55%;
+    backdrop-filter:blur(15px);
+    box-shadow: inset 5px 5px 50px ; 
+    border-radius:10px;
+    border: orangered;
+    /* text-shadow:white 30px; */
+}
+.overlay-text1 {
+    position: absolute;
+    top: 70%;
+    right: 70%;
+    margin-right:50px;
+    backdrop-filter:blur(10px);
+    box-shadow: inset 0px 0px 50px ;
+    border-radius:10px;
+    border: orangered;
+    font-size: medium;
+}
+.mySlides{
+    margin-right:10px;
+    width:1500px;
+    height:650px;
+}
+
+</style>
+</head>
+
+<body onload="generate()">
+<div>
+  <img class="mySlides w3-animate-left" src="https://cdn.pixabay.com/photo/2018/08/12/16/59/parrot-3601194_1280.jpg">    <!--lion -->
+  <img class="mySlides w3-animate-right" src="https://cdn.pixabay.com/photo/2017/07/18/18/24/dove-2516641_640.jpg">    <!--deer -->
+  <img class="mySlides w3-animate-left" src="https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_640.jpg">    <!--cheetha -->
+  <img class="mySlides w3-animate-right" src="https://cdn.pixabay.com/photo/2015/12/25/06/32/barn-owl-1107397_640.jpg">  <!--egale -->
+  <img class="mySlides w3-animate-left" src="https://cdn.pixabay.com/photo/2017/03/04/10/48/peacock-2115823_640.jpg">  <!--elephant -->
+  <img class="mySlides w3-animate-right" src="https://cdn.pixabay.com/photo/2018/10/08/14/46/bird-3732867_640.jpg">  <!--tiger -->
+<img class="mySlides w3-animate-left" src="https://cdn.pixabay.com/photo/2012/02/24/16/59/swan-16736_640.jpg">
+</div>
+
+<div class="overlay-text">
+    <h1 id="na">VIRTUAL ZOO</h1>
+</div>
+
+<div class="overlay-text1">
+    <table>
+        <tr>
+            <td><a href="{% url 'register' %}" id="a1">Create Account</a></td>
+            <td><a href="{% url 'login' %}" id="a2" style="color: white;">Login </a></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BEAR</title>
+   <style>
+body{
+      overflow:hidden;
+    }
+    ul{
+  width:200px;
+      }
+            img{
+       width:1350px;
+   height:670px;
+}
+.overlay-text1 {
+   position: absolute;
+   top: 10%;
+   left:30px;
+   backdrop-filter:blur(10px);
+   box-shadow: inset 0px 0px 50px ;
+   border-radius:10px;
+}
+table{
+   width:100px;
+   height:100px;
+}
+.overlay-text2 {
+   position: absolute;
+   top: 10%;
+   left: 220px;
+   right:0px;
+   width:1100px;
+   height:500px;
+   backdrop-filter:blur(3px);
+   box-shadow: inset 0px 0px 50px ;
+   border-radius:10px;
+   justify-items:center;
+   border: orangered;
+}
+
+#img1{
+ height: 480px;
+ width: 1000px;
+ margin-left:50px;
+}
+h2{
+  font-size: 20px;
+  color: white;
+}
+h1{
+  font-size:35px;
+  text-decoration:underline;
+text-transform: capitalize;
+  color: white;
+}
+
+#play-button1{
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:skyblue;
+  color: white;
+  font-size:20px;
+}
+#play-button1:hover{
+  color: black;
+  text-decoration: overline;
+  background-color: yellow;
+}
+   </style>
+</head>
+<body>
+    <div>
+  <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_640.jpg">
+ </div>
+ <div class="overlay-text1">
+    <table>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-2">Polar bear</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-3">Black bear</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-4">brown bear</button></td></tr>
+
+   </table> 
+</div>
+ <div class="overlay-text2">
+     <div id="content-2" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/1zRGzlWqce4" title="Polar Bears 101 | Nat Geo Wild" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+            <ul style="list-style-type:circle">
+              <h1> Polar Bear</h1>
+               <li><h2>Scientific name:<br><i> Ursus maritimus</h2></li></i>
+               <li><h2>Lifespan:<br><i>  20 to 30 years</h2></li></i>
+               <li><h2>Food: <br><i> fish,seals.</h2></li></i>
+               <li><h2>Specialty:<br><i>  adapoted to coolest region , white color</h2></li></i>
+               <li><h2>Speed: <br><i> 25mph</h2></li></i>
+               <li><h2>Weight:<br><i> 900 to 1,600 pounds</h2></li></i>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-3" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/hcQDiIG_dJI" title="Cute Black Bear Cubs PURRING While Feeding | BBC Earth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+            <ul style="list-style-type:circle">
+              <h1> Black Bear</h1>
+               <li><h2>Scientific name: <br><i> Ursus americanus</h2></li>
+               <li><h2>Lifespan: <br><i> 20 to 30 years</h2></li></i>
+               <li><h2>Food:<br><i>  berries, nuts, plants, insects, fish, small mammal</h2></li></i>
+               <li><h2>Specialty:<br><i> climb trees proficiently</h2></li></i>
+               <li><h2>Speed:<br><i>  30 miles per hour</h2></li></i></i>
+               <li><h2>weight:<br><i> upto 300kgs</h2></li></i></i>
+              </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-4" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/IRRCX1ZQdVY" title="Explore the Grizzly Empire | Destination WILD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+            <ul style="list-style-type:circle">
+              <h1>Brown Bear</h1>
+               <li><h2>Scientific name:<br><i>  Ursus arctos</h2></li></i>
+               <li><h2>Lifespan:<br><i>  20 to 30 years.</h2></li></i>
+               <li><h2> Food:<br><i>  berries, nuts, roots, grass,fish, small mammals</h2></li></i>
+               <li><h2>Specialty:<br><i> size,strength,hibernation habits.</h2></li></i>
+               <li><h2>Speed:<br><i>  30 mph.</h2></li></i>
+               <li><h2>Weight:<br><i>  220 to 1,400 pounds</h2></li></i>
+              </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+ </div>
+   <script>
+       const buttons = document.querySelectorAll('.nav-button');
+       const contentItems = document.querySelectorAll('.content-item');
+       buttons.forEach((button) => {
+         button.addEventListener('click', () => { 
+           contentItems.forEach((item) => {
+             item.style.display = 'none';
+           });// Remove the "active" class from all buttons
+           buttons.forEach((btn) => {
+              btn.classList.remove('active');
+           });            // Show the corresponding content
+           const contentId = button.getAttribute('data-content');
+           const content = document.getElementById(contentId);
+           content.style.display = 'block';
+           button.classList.add('active');
+         });
+       });  // Initially show the content for the first button (if needed)
+       const firstButton = buttons[0];
+       firstButton.click();
+     </script>
+</body>
+</html>
+</body>
+</html>

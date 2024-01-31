@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MAMMALS</title>
+   <style>
+body{
+      overflow:hidden;
+    }
+    ul{
+  width:200px;
+      }
+            img{
+       width:1350px;
+   height:670px;
+}
+.overlay-text1 {
+   position: absolute;
+   top: 10%;
+   left:30px;
+   backdrop-filter:blur(10px);
+   box-shadow: inset 0px 0px 50px ;
+   border-radius:10px;
+}
+table{
+   width:150px;
+   height:100px;
+  }
+td{
+  border-collapse:separate;
+  border-spacing:0 15px;
+}
+.overlay-text2 {
+   position: absolute;
+   top: 10%;
+   left: 200px;
+   right:0px;
+   width:1150px;
+   height:550px;
+   backdrop-filter:blur(3px);
+   box-shadow: inset 0px 0px 50px ;
+   border-radius:10px;
+   justify-items:center;
+   border: orangered;
+}
+#app{
+ position: relative;
+ top:-60px;
+ left:0px;
+}
+#img1{
+ height: 480px;
+ width: 1000px;
+ margin-left:50px;
+}
+iframe{
+  width:800px;
+  height:480px;
+}
+#play-button1{
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:skyblue;
+  color: white;
+  font-size:20px;
+}
+#play-button1:hover{
+  color: black;
+  text-decoration: overline;
+  background-color: yellow;
+}
+/* b{
+  font-size:20px;
+}
+i{
+  font-size:18px;
+} */
+h2{
+  font-size:20px;
+}
+li{
+  text-transform: capitalize;
+  color: white;
+/*  width:500px;
+ font-size:20px;*/
+}
+h1{
+  /*margin-top:-50%*/
+  color:white;
+  font-size:35px;
+  text-transform: capitalize; 
+}
+   </style>
+</head>
+<body>
+    <div>
+  <img src="https://cdn.pixabay.com/photo/2020/04/04/03/11/gocta-5000656_640.jpg">
+ </div>
+ <div class="overlay-text1">
+    <table>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-2">Elephant</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-3">Girafee</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-4">Kangaroo</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-5">rhinoceros</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-6">hippopotamus </button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-7">capybara</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-9">sloths</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-8">Giant armadillo</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-10">Pangolins</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-1">Anteater</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-11">koalas</button></td></tr>
+  </table> 
+</div>
+ <div class="overlay-text2">
+     <div id="content-2" class="content-item">
+       <table>
+         <tr>
+           <td><iframe src="https://drive.google.com/file/d/1HrM0hVhdf4ies10lKELTtZEmiA5ckW36/preview" width="640" height="480" allow="autoplay"></iframe></td>
+           <td>
+             <ul>
+              <h1>elephant</h1>
+              <li><h2>scientific name:<br><i>elephantidae</i></h2></li>
+              <li><h2>Lifespan:<br><i>60-70 years</i></h2></li>
+              <li><h2>Food:<br><i>grass,fruits,shrubs,leaves</i></h2></li>
+              <li><h2>Speciality:<br><i>largest land animal</i></h2></li>
+              <li><h2>Speed:<br><i>40 km/h</i></h2></li>
+              <li><h2>Weight:<br><i>2700-6000 kg</i></h2></li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-3" class="content-item">
+       <table>
+         <tr>
+           <td><iframe src="https://drive.google.com/file/d/1Ht5ZUaNLsmZ1zI5NNlJKtO1u-v2dCKWo/preview" width="640" height="480" allow="autoplay"></iframe></td>
+           <td>
+            <ul>
+              <h1>giraffe </h1>
+              <li><h2>scientific name:<br><i>giraffa </i></h2></li>
+              <li><h2>Lifespan:<br><i>25 years</i></h2></li>
+              <li><h2>Food:<br><i>leaves,twigs of acacia,mimosa</i></h2></li>
+              <li><h2>Speciality:<br><i>tallest mammals on earth</i></h2></li>
+              <li><h2>Speed:<br><i>60 km/h</i></h2></li>
+              <li><h2>Weight:<br><i>800-1900kg</i></h2></li>
+            </ul>
+          </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-1" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/yc8ZiyweAF0" title="The Giant Anteater and the Termites - Secrets of our Living Planet - Episode 2 - BBC Two" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+          <td>
+            <ul>
+             <h1>Anteaters</h1>
+             <li><h2>scientific name:<br><i>Vermilingua</i></h2></li>
+             <li><h2>Lifespan:<br><i>14 years</i></h2></li>
+             <li><h2>Food:<br><i>ants and termites</i></h2></li>
+             <li><h2>Speciality:<br><i>long tounge</i> </h2></li>
+             <li><h2>Speed:<br><i>30 mph</i></h2></li>
+             <li><h2>Weight:<br><i>33-50 kg</i></h2></li>
+           </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+     <div id="content-4" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/8BbZTCdB2X4" title="The Kangaroo is the World&#39;s Largest Hopping Animal | National Geographic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul>
+              <h1>kangaroo</h1>
+              <li><h2>scientific name:<br><i>macropods</i></h2></li>
+              <li><h2>Lifespan:<br><i>20 years</i></h2></li>
+              <li><h2>Food:<br><i>grass,leaves,flowers,fruits</i></h2></li>
+              <li><h2>Speciality:<br><i>strong tails,jumping</i> </h2></li>
+              <li><h2>Speed:<br><i>70 km/h</i></h2></li>
+              <li><h2>Weight:<br><i>50-66kg</i></h2></li>
+            </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+      <div id="content-5" class="content-item">
+        <table>
+          <tr>
+            <td><iframe width="853" height="480" src="https://www.youtube.com/embed/TYklMREHD-s" title="All About Rhinos for Kids: Rhinoceros for Children - FreeSchool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td>
+              <ul>
+               <h1>rhinoceros</h1>
+               <li><h2>scientific name:<br><i>unicornis</i></h2></li>
+               <li><h2>Lifespan:<br><i>35-45 years</i></h2></li>
+               <li><h2>Food:<br><i>fruits,shrubs,leaves,bark</i></h2></li>
+               <li><h2>Speciality:<br><i>Javan and greater one-horned rhinos</i></h2></li>
+               <li><h2>Speed:<br><i>55km/h</i></h2></li>
+               <li><h2>Weight:<br><i>1800kg to 2700kg</i></h2></li>
+             </ul>
+            </td>
+          </tr>
+        </table>
+     </div>
+     
+     <div id="content-6" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/6pibJ83crQs" title="True Facts: Hippopotamus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+          <td>
+            <ul>
+             <h1>hippopotamus</h1>
+             <li><h2>scientific name:<br><i>hippopotamus amphibius</i></h2></li>
+             <li><h2>Lifespan:<br><i>40-50years</i></h2></li>
+             <li><h2>Food:<br><i>only plants </i></h2></li>
+             <li><h2>Speciality:<br><i>large semi-aquatic,large barrel-shaped body ,short legs,short tail</i></h2></li>
+             <li><h2>Speed:<br><i>30km/h</i></h2></li>
+             <li><h2>Weight:<br><i>1500 to 1800 kg</i></h2></li>
+           </ul>
+          </td>
+        </tr>
+      </table>
+     </div>
+     <div id="content-7" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/wE6pEsjgdHo" title="A Capybara Family&#39;s Day at Play | Deadly Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+          <td>
+            <ul>
+              <h1> capybara</h1>
+              <li><h2>scientific name:<br><i>hydrochoerus hydrochaeris</i></h2></li>
+              <li><h2>Lifespan:<br><i>4-8 years</i></h2></li>
+              <li><h2>Food:<br><i>reeds,grains, melons, squashes</i></h2></li>
+              <li><h2>Speciality:<br><i>the world's proficient swimmer</i> </h2></li>
+              <li><h2>Speed:<br><i>22mph</i></h2></li>
+              <li><h2>Weight:<br><i>60-174pounds</i></h2></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+     </div>
+     <div id="content-8" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/RSZy8-7BPWk" title="This Was The Largest Armadillo Ever" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul>
+              <h1>giant armadillo</h1>
+              <li><h2>scientific name:<br><i>priodontes maximus </i></h2></li>
+              <li><h2>Lifespan:<br><i>upto 15 Years</i></h2></li>
+              <li><h2>Food:<br><i>ants,worms, spiders</i></h2></li>
+              <li><h2>Speciality:<br><i>strongest sheild</i></h2></li>
+              <li><h2>Speed:<br><i>30mph</i></h2></li>
+              <li><h2>Weight:<br><i>19-33kg</i></h2></li>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-9" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/4zwu-Z1Gbck" title="The Sloth Power Animal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul>
+              <h1>sloths </h1>
+              <li><h2>scientific name:<br><i>folivora</i></h2></li>
+              <li><h2>Lifespan:<br><i>20-30 years </i></h2></li>
+              <li><h2>Food:<br><i>leaves,fruits,bird's eggs,lizards</i></h2></li>
+              <li><h2>Speciality:<br><i>sloths are laziest animal </i></h2></li>
+              <li><h2>Speed:<br><i>0.27km/h</i></h2></li>
+              <li><h2>Weight:<br><i>9 and 17 pounds</i></h2></li>
+            </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+
+     <div id="content-10" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/DqC3ieJJlFM" title="Pangolins: The Most Trafficked Mammal You&#39;ve Never Heard Of | National Geographic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+          <td>
+            <ul>
+             <h1>Pangolins</h1>
+             <li><h2>Scientific name:<br><i>Pholidota</i></h2></li>
+             <li><h2>Lifespan:<br><i>20 years </i></h2></li>
+             <li><h2>Food:<br><i>termites and ants</i></h2></li>
+             <li><h2>Speciality:<br><i>covered with sheild</i></h2></li>
+             <li><h2>Speed:<br><i>5km/h</i></h2></li>
+             <li><h2>Weight:<br><i>4.4 and 7 pounds</i></h2></li>
+           </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="content-11" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/oI3ADcDH0Uc" title="Koalas 101 | Nat Geo Wild" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </td>
+          <td>
+            <ul>
+             <h1>koalas</h1>
+             <li><h2>Scientific name:<br><i>Phascolarctos cinereus</i></h2></li>
+             <li><h2>Lifespan:<br><i>13-18 year</i></h2></li>
+             <li><h2>Food:<br><i>leaves of eucalyptus trees</i></h2></li>
+             <li><h2>Speciality:<br><i>Highly hearing and sense of smell</i></h2></li>
+             <li><h2>Speed:<br><i>20mph</i></h2></li>
+             <li><h2>Weight:<br><i>4 - 15 kg </i></h2></li>
+           </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+     
+   <script>
+       const buttons = document.querySelectorAll('.nav-button');
+       const contentItems = document.querySelectorAll('.content-item');
+       buttons.forEach((button) => {
+         button.addEventListener('click', () => { 
+           contentItems.forEach((item) => {
+             item.style.display = 'none';
+           });// Remove the "active" class from all buttons
+           buttons.forEach((btn) => {
+              btn.classList.remove('active');
+           });            // Show the corresponding content
+           const contentId = button.getAttribute('data-content');
+           const content = document.getElementById(contentId);
+           content.style.display = 'block';
+// Add the "active" class to the clicked button
+           button.classList.add('active');
+         });
+       });  // Initially show the content for the first button (if needed)
+       const firstButton = buttons[0];
+       firstButton.click();
+     </script>
+</body>
+</html>
+</body>
+</html>

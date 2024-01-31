@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual_Z00</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<style>
+    #btn:hover{
+        background-color: blue;
+        color: white;
+        text-align: end;
+    }
+    table{
+        margin-left:30px;
+    width:550px;
+    height:190px;
+    font-size:20px;
+    color: white;
+}
+input{
+    font-size: 20px;
+}
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    right: 55%;
+    backdrop-filter:blur(10px);
+    box-shadow: inset 0px 0px 50px ;
+    border-radius:10px;
+    border: orangered;
+}
+.mySlides{
+    margin-right:10px;
+    width:1500px;
+    height:650px;
+}
+h1{
+    color: white;
+    padding-right:130px;
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body onload="generate()">
+<div>
+<img class="mySlides w3-animate-left" src="https://images.hdqwalls.com/wallpapers/lion-forest-5k-0v.jpg">    <!--lion -->
+<img class="mySlides w3-animate-left" src="https://media.istockphoto.com/id/183343495/photo/gray-langur-monkey-india.jpg?s=612x612&w=0&k=20&c=02kWFXLLyzzli0iMzd3KhyA2VM5Xa86gSreMpNuXWF0=">
+<img class="mySlides w3-animate-left" src="https://media.istockphoto.com/id/1191705442/photo/black-wolf-with-a-black-background.jpg?s=612x612&w=0&k=20&c=kc60Ec4hMCWOoweSRSFxCcx8y-ceGjpJXTqhG6Ws6IQ=">    <!--cheetha -->
+<img class="mySlides w3-animate-right" src="https://media.istockphoto.com/id/1210682847/photo/a-beautiful-bengal-tiger-relaxing-on-a-rocky-outcrop-at-sunset.jpg?s=612x612&w=0&k=20&c=vNHLptVtWApPCVzNR-fhBxMH6Jq2WDye85_cBB1Vv3k=">  <!--tiger -->
+<img class="mySlides w3-animate-left" src="https://images.hdqwalls.com/wallpapers/elephant-walking-on-the-road-hdr-8k-z1.jpg">  <!--elephant -->
+<img class="mySlides w3-animate-right" src="https://media.istockphoto.com/id/996505208/photo/male-fallow-deer-dama-dama-foraging-during-sunsrise.jpg?s=612x612&w=0&k=20&c=bswG5iuKYZ2beN45Fybh1MY_FVEEKgFlVSEPN4JCl1s=">    <!--deer -->
+<img class="mySlides w3-animate-right" src="https://media.istockphoto.com/id/168511255/photo/bald-eagle-gliding-against-blue-sky-and-white-wispy-clouds.jpg?s=612x612&w=0&k=20&c=JyjS17gd_WvL7oXtrL7GczEBDQ0Mxl_XWGtjoZnHtaE=">  <!--egale -->
+</div>
+<div class="overlay-text">
+    <form  id="paymentForm" method="post">
+        {% csrf_token %}
+        <h1>Login</h1>
+    <table>
+        <tr>
+            <td><label>Enter username:</label></td>
+            <td><input type="text" id="input" placeholder="name"  required name="username"></td>
+        </tr>
+        <tr>
+            <td><label>Enter password:</label></td>
+            <td><input type="password" id="input" placeholder="password" required name="pass"></td>
+        </tr>
+       <tr>
+        <td></td>
+        <td><button type="submit" id="btn">Login</button></td>
+       </tr>
+    </table>
+    </form>
+    <a href="{% url 'register' %}" style="color: white;">create account</a>
+</div>
+<audio id="audio2" controls autoplay style="display:none;">
+    <source src="https://docs.google.com/uc?export=download&id=1rifrb6zLj1L1xnVxb5B2RcpYr_3jYYoo" type="audio/mpeg" onclick="style">
+    Your browser does not support the audio element.
+</audio>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+const audio2 = document.getElementById('audio2');
+button2.addEventListener('click', function() {
+            audio2.play(); // Play Song 2
+        });
+</script>
+</body>
+</html>
+

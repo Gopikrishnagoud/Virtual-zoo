@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIRECTION BOARD</title>
+    <style>
+        body{
+            overflow:-moz-hidden-unscrollable;
+        }
+img{
+    position: absolute;
+    width:1350px;
+    height:635px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overlay-text {
+    position: absolute;
+    bottom:200px;
+     left: 590px;
+    border-radius:10px;
+    border: orangered;
+}
+button{
+    /* text-transform: uppercase; */
+    background-color:burlywood;
+   color: black;
+    font-size: 15px;
+}
+button:hover{
+    color: black;
+    background-image: linear-gradient(blue,orange);
+}
+    a{
+        color:black;
+        text-transform: capitalize;
+        font-size:20px;
+    }
+
+table{
+    border-collapse: separate; 
+            border-spacing: 10px; 
+}
+    </style>
+</head>
+<body>
+    <div>
+    <img src="https://i.pinimg.com/1200x/ca/5a/f3/ca5af31252d621f212f717780d1ce61e.jpg">
+    </div>
+<div class="overlay-text">
+    <form>
+    <table>
+        <tr>
+            <td><button type="submit"><a href="{% url 'page1' %}">Wild animals</a></button></td>
+            <td><button type="submit"><a href="{% url 'mammals' %}">mammals</a></button></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="{% url 'deers' %} ">deers</a></button></td>
+            <td><button type="submit"><a href="{% url 'snakes' %}">snakes</a></button></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="{% url 'crocodile' %} ">crocodiles</a></button></td>
+            <td><button type="submit"><a href="{% url 'turtules' %}">turtules</a></button></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="{% url 'birds' %} ">birds</a></button></td>
+            <td><button type="submit"><a href="{% url 'aquatic' %}">aquatic animals</a></button></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="{% url 'bears' %} ">bears</a></button></td>
+            <td><button type="submit"><a href="{%url  'lizards' %}">Lizards</a></button></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="{%url  'horse' %}">zebra's & horse's,camels & yaks</a></button></td>
+            <td><button type="submit"><a href="{%url  'mammalia' %}">Mammalia</a></button></td>
+        </tr>
+        <tr>
+            <td><button type="submit"><a href="{% url 'Extinct_Animals' %} ">Extinct_Animals</a></button></td>
+            <td><button type="submit"><a href="{%url  'hybrid' %}">Hybrids</a></button></td>
+        </tr>
+        <tr>
+            <td>
+                <td><button type="submit"><a href="{%url  'logout' %}">Log out</a></button></td>
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+<audio id="audio2" controls autoplay style="display:none;">
+    <source src="https://docs.google.com/uc?export=download&id=1rifrb6zLj1L1xnVxb5B2RcpYr_3jYYoo" type="audio/mpeg" onclick="style">
+</audio>
+<script>
+    const audio2 = document.getElementById('audio2');
+    button2.addEventListener('click', function() {
+                audio2.play(); // Play Song 2
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Horse's and Zebra's</title>
+   <style>
+body{
+      overflow:hidden;
+    }
+            img{
+       width:1350px;
+   height:670px;
+}
+.overlay-text1 {
+   position: absolute;
+   top: 10%;
+   left:10px;
+   backdrop-filter:blur(10px);
+   box-shadow: inset 0px 0px 50px ;
+   border-radius:10px;
+}
+table{
+   width:150px;
+   height:100px;
+}
+.overlay-text2 {
+   position: absolute;
+   top: 7%;
+   left: 170px;
+   right:0px;
+   width:1150px;
+   height:550px;
+   backdrop-filter:blur(3px);
+   box-shadow: inset 0px 0px 50px ;
+   border-radius:10px;
+   justify-items:center;
+   border: orangered;
+}
+#app{
+ position: relative;
+ top:-60px;
+ left:0px;
+}
+#img1{
+ height: 480px;
+ width: 1000px;
+ margin-left:50px;
+}
+#play-button1{
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:skyblue;
+  color: white;
+  font-size:20px;
+}
+#play-button1:hover{
+  color: black;
+  text-decoration: overline;
+  background-color: yellow;
+}
+iframe{
+  width:800px;
+  height:480px;
+}
+li{
+  text-transform: capitalize;
+  color: white;
+}
+h2{
+  font-size: 20px;
+}
+h1{
+  font-size:35px;
+  text-decoration:underline;
+ text-transform: capitalize;
+  color: white;
+}
+ul{
+  width:200px;
+}
+   </style>
+</head>
+<body>
+    <div>
+  <img src="https://cdn.pixabay.com/photo/2017/10/31/07/49/horses-2904536_640.jpg">
+ </div>
+ <div class="overlay-text1">
+    <table>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-2">Arabian Horse</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-3">Friesian Horse</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-4">Mustang</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-5">Shire horse</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-6">Criollo</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-7">Plain zebra</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-8">Grevy zebra</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-9">Mountain Zebra</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-10">camel</button></td></tr>
+<tr><td><button  id="play-button1"  class="nav-button"  data-content="content-11">yak</button></td></tr>
+</table>
+</div>
+ <div class="overlay-text2">
+     <div id="content-2" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/vLzSgLbRsq0" title="Arabian Horse - Origin, Characteristics and Temperament" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+           <h1>Arabian horse</h1>
+              <li><h2>Scientific name:<br><i>equus ferus caballus</h2></li></i>
+              <li><h2>Lifespan:<br><i>25-30 years</h2></li></i>
+              <li><h2>Food:<br><i>fresh grass,hay and grains </h2></li></i>
+              <li><h2>Speciality:<br><i>speed,stamina,intelligence</h2></li></i>
+              <li><h2>Speed:<br><i>65 mph</h2></li></i>
+              <li><h2>Weight:<br><i>450 kg</h2></li>  </i>
+            </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-3" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/G7cQP24b1sQ" title="The Friesian horse I characteristics, origin &amp; disciplines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+            <ul style="list-style-type:circle">
+              <h1>Friesian horse</h1>
+              <li><h2>Scientific name:<br><i>equus ferus caballus</h2></li></i>
+              <li><h2>Lifespan:<br><i>25-30 years</h2></li></i>
+              <li><h2>Food:<br><i>hay, grain,vegetables and fruits</h2></li></i>
+              <li><h2>Speciality:<br><i>high-stepping trot</h2></li></i>
+              <li><h2>Speed:<br><i>30mph</h2></li></i>
+              <li><h2>Weight:<br><i>1200-1400 pounds</h2></li>  </i>   
+            </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-4" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/2m8nZhkvPLk" title="Mustang Horse  | characteristics, origin &amp; disciplines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+              <h1>mustang horse</h1>
+              <li><h2>Scientific name:<br><i>equus caballus </h2></li></i>
+              <li><h2>Lifespan:<br><i>25-30 years</h2></li></i></i>
+              <li><h2>Food:<br><i>grass and other plants</h2></li></i>
+              <li><h2>Speciality:<br><i>very  hardy and surefooted</h2></li></i>
+              <li><h2>Speed:<br><i>25-30mph</h2></li></i>
+              <li><h2>Weight:<br><i>370kg</h2></li></i>
+             </ul>  
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-5" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/8PtAMnGgQ4o" title="Shire Horse | characteristics, origin &amp; disciplines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+              <h1>shire horse</h1>
+              <li><h2>Scientific name:<br><i>Equus caballus</h2></li></i>
+              <li><h2>Lifespan:<br><i>25-30 years</h2></li></i>
+              <li><h2>Food:<br><i>low-starch grass hay</h2></li></i>
+              <li><h2>Speciality:<br><i>great weight pulling capacity</h2></li></i>
+              <li><h2>Speed:<br><i>27-40mph</h2></li></i>
+              <li><h2>Weight:<br><i>850-1100kg</h2></li> </i>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     
+     <div id="content-6" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/odvata80FQk" title="Criollo | characteristics, origin &amp; disciplines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+              <h1>criollo horse</h1>
+              <li><h2>Scientific name:<br><i>equus caballus</h2></li></i>
+              <li><h2>Lifespan:<br><i>36-40 years</h2></li></i>
+              <li><h2>Food:<br><i>grass</h2></li></i>
+              <li><h2>Speciality:<br><i>ability to live in harsh conditions</h2></li></i>
+              <li><h2>Speed:<br><i>32mph</h2></li></i>
+              <li><h2>Weight:<br><i>545kg-590 kg</h2></li> </i>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-7" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/akPGwGSR3kA" title="Zebra 101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+              <h1>Name:plains zebra</h1>
+              <li><h2>Scientific name: <br><i>equus quagga</h2></li></i>
+              <li><h2>Lifespan:<br><i>25 years</h2></li></i>
+              <li><h2>Food:<br><i>grass,leaves and stems</h2></li></i>
+              <li><h2>Speciality:<br><i>highly social spicies</h2></li></i>
+              <li><h2>Speed:<br><i>65km/m</h2></li></i>
+              <li><h2> Weight:<br><i>400 kg</h2></li> </i>
+            </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-8" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/Dm7U22QUswc" title="Two Grevy’s Zebra Births Add to Endangered Population" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+              <h1>Grevy's zebra</h1>
+              <li><h2>Scientific name:<br><i>equus grevyi</h2></li></i>
+              <li><h2>Lifespan:<br><i>20-30years</h2></li></i>
+              <li><h2>Food:<br><i>grass,fruits,leaves </h2></li></i>
+              <li><h2>Speciality:<br><i>long neck</h2></li></i>
+              <li><h2>Speed:<br><i>upto 40 mph</h2></li></i>
+              <li><h2> Weight:<br><i>350-450kg</h2></li></i>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+     <div id="content-9" class="content-item">
+       <table>
+         <tr>
+           <td><iframe width="853" height="480" src="https://www.youtube.com/embed/e8PYMAh2YAM" title="Mountain Zebra National Park - South Africa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+           <td>
+             <ul style="list-style-type:circle">
+             <h1>mountain zebra </h1>
+              <li><h2>Scientific name:<br><i>equus zebra </h2></li></i>
+              <li><h2>Lifespan:<br><i>20-30years</h2></li></i>
+              <li><h2>Food:<br><i>grass ,pellets,hay and leaves</h2></li></i>
+              <li><h2>Speciality: <br><i>smallest of the zebra species</h2></li></i>
+              <li><h2>Speed:<br><i>upto to 35mps</h2></li></i>
+              <li><h2>Weight:<br><i>upto 280kg</h2></li> </i>
+             </ul>
+           </td>
+         </tr>
+       </table>
+     </div>
+    <div id="content-10" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/f-6ReiIXa2Y" title="Camels Don&#39;t Mind Spines In Their Cacti | Nat Geo Wild" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+          <td>
+            <ul style="list-style-type:circle">
+            <h1>camel</h1>
+             <li><h2>Scientific name:<br><i> Camelus</h2></li></i>
+             <li><h2>lifespan:<br><i></h2></li></i>
+             <li><h2>food:<br><i>grass, grains, wheat and oats.</h2></li></i>
+             <li><h2>Speciality:<br><i>survive for long periods of time without food or water</h2></li></i>
+             <li><h2>Speed:<br><i> 65 km/h</h2></li></i>
+             <li><h2>weight:<br><i>300 – 1,000 kg</h2></li></i>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="content-11" class="content-item">
+      <table>
+        <tr>
+          <td><iframe width="853" height="480" src="https://www.youtube.com/embed/Uz8eeZABhyA" title="For Musk Ox in Siberia, It&#39;s a Cold Life | Wild Russia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+          <td>
+            <ul style="list-style-type:circle">
+            <h1>yak</h1>
+             <li><h2>Scientific name:<br><i> Bos grunniens</h2></li></i>
+             <li><h2>lifespan:<br><i> 25 to 28 years</h2></li></i>
+             <li><h2>food:<br><i>grasses, herbs and lichens</h2></li></i>
+             <li><h2>Speciality:<br><i>cloven hooves, bulky frames,sturdy legs</h2></li></i>
+             <li><h2>speed:<br><i>25mph</h2></li></i>
+             <li><h2>Mass: <br><i>350 – 580 kg</h2></li></i>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+    <script>
+       const buttons = document.querySelectorAll('.nav-button');
+       const contentItems = document.querySelectorAll('.content-item');
+       buttons.forEach((button) => {
+         button.addEventListener('click', () => {
+           contentItems.forEach((item) => {
+             item.style.display = 'none';
+           });// Remove the "active" class from all buttons
+           buttons.forEach((btn) => {
+              btn.classList.remove('active');
+           });            // Show the corresponding content
+           const contentId = button.getAttribute('data-content');
+           const content = document.getElementById(contentId);
+           content.style.display = 'block';
+           button.classList.add('active');
+         });
+       });  // Initially show the content for the first button (if needed)
+       const firstButton = buttons[0];
+       firstButton.click();
+       
+     </script>
+</body>
+</html>
+
